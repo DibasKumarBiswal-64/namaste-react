@@ -22,7 +22,6 @@ const Header = () => {
 
 const RestaurantCard = (props) => {
     const {resInfo} = props;
-    console.log(resInfo);
     return (
         <div className="res-card" style={{backgroundColor:"#f0f0f0 "}}>
             <img className="res-logo"
