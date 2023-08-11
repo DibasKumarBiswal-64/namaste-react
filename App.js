@@ -154,7 +154,6 @@ const Body = () => {
                 <RestaurantCard 
                 resInfo={resObj}
                 />
-                <RestaurantCard resName="Burger Kings" cuisine="Burger,Fast Food"/>
             </div>
         </div>
     );
