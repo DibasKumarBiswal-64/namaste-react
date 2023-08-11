@@ -1,3 +1,32 @@
-#heading {
-    color: red;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .header {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    margin-inline: auto;
+    /* overflow: hidden; */
+    box-shadow: 0 0 4px #bbd0e2;
+    /* position: fixed; */
+  }
+
+.nav-items > ul {
+  display: flex;
+  list-style-type: none;
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  font-size: 1.5em;
 }
+ .logo{
+    display: flex;
+    width: 100px;
+    height: 100px;
+  } 
+  .nav-items > ul >li {
+    padding: 10px;
+    line-height: 1.4rem;
+  }
