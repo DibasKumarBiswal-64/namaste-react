@@ -1,6 +1,7 @@
 # Namaste React🚀
 
 # Parcel
+
 Dev Build
 Local Server
 HMR=Hot Module Repalecment
@@ -20,6 +21,7 @@ Tree SHAKING - remove unused code
 Different dev and prod bundles
 
 # Food ordering App
+
 -Header
    logo
    Nav Items
@@ -35,6 +37,7 @@ Different dev and prod bundles
     Address
     Contact
 # Important concept and algo
+
 -Config.driven UI
 -Reconciliation algorithm(React fibre)
 -Virtual DOM = React is doing efficient DOM utilization because react has virtual DOM 
