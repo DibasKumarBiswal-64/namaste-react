@@ -1,23 +1,23 @@
 # Namaste React🚀
 
 # Parcel
--Dev Build
--Local Server
--HMR=Hot Module Repalecment
--File Watching Algorithm
--Caching - Faster Builds
--Image Optimization
--Minification
--Building
--Compress
--Consistent Hashing
--Code Splitting
--Differentail Bundling - Support Older Browser
--Diagnostic
--Error Handling
--HTTPs
--Tree SHAKING - remove unused code
--Different dev and prod bundles
+Dev Build
+Local Server
+HMR=Hot Module Repalecment
+File Watching Algorithm
+Caching - Faster Builds
+Image Optimization
+Minification
+Building
+Compress
+Consistent Hashing
+Code Splitting
+Differentail Bundling - Support Older Browser
+Diagnostic
+Error Handling
+HTTPs
+Tree SHAKING - remove unused code
+Different dev and prod bundles
 
 # Food ordering App
 -Header
