@@ -17,10 +17,10 @@ const Body = () => {
   },[]);
 
   const fetchData = async () => {
-            const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=20.2425036&lng=85.720452&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
+            const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=20.2508183&lng=85.8145617&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
             const json = await data.json();
             console.log(json);
-            setListOfRestaurants(json?.data?.cards[0]?.card?.card);
+            setListOfRestaurants(json.data.cards[4].card.gridElements.infoWithStyle.restaurants);
   };
 
     return (
