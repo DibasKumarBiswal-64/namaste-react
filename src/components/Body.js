@@ -54,7 +54,7 @@ const Body = () => {
                   console.log(searchText);
                   
                   const filteredRestaurant = ListOfRestaurants.filter(
-                    (res)=> res?.data?.name?.includes( searchText)
+                    (res)=> res?.data?.name?.includes(searchText)
                     );
 
                     setListOfRestaurants(filteredRestaurant);
