@@ -79,3 +79,6 @@
   .filter {
     display: flex;
   }
+  .error {
+    line-height: 50px;
+  }

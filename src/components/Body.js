@@ -10,7 +10,9 @@ const Body = () => {
 
     //local state variable
 
-  const [ListOfRestaurants, setListOfRestaurants ] = useState(resList);
+  const [ListOfRestaurants, setListOfRestaurants ] = useState([]);
+
+  const [filteredRestaurant,setFilteredRestaurant]=useState([]);
   
   // whenever state variables updates, react triggers a reconcilation cycle(re-render the component)
   const [searchText, setSearchText] = useState("");
@@ -36,6 +38,9 @@ const Body = () => {
         setListOfRestaurants(
           item?.card?.card?.gridElements?.infoWithStyle?.restaurants
         );
+        setFilteredRestaurant(
+          item?.card?.card?.gridElements?.infoWithStyle?.restaurants
+        );
       }
     });
   };
@@ -54,10 +59,10 @@ const Body = () => {
                   console.log(searchText);
                   
                   const filteredRestaurant = ListOfRestaurants.filter(
-                    (res)=> res?.data?.name?.includes(searchText)
+                    (res)=> res?.info?.name?.toLowerCase()?.includes(searchText.toLowerCase())
                     );
 
-                    setListOfRestaurants(filteredRestaurant);
+                    setFilteredRestaurant(filteredRestaurant);
 
                 }}
                 >Search</button>
@@ -74,7 +79,7 @@ const Body = () => {
                 </div>
             <div className="res-container">
                 {
-                  ListOfRestaurants.map((restaurant)=>(
+                  filteredRestaurant.map((restaurant)=>(
                   <RestaurantCard key={restaurant?.info?.id} resData={restaurant}/>
                   ))}
             </div>
