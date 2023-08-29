@@ -1,8 +1,8 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
   .header {
     display: flex;
     /* align-items: center; */
@@ -81,4 +81,10 @@
   }
   .error {
     line-height: 50px;
+  }
+  .menu {
+    margin-left: 20px;
+  }
+  .chees {
+    margin-left: 40px;
   }
